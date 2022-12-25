@@ -44,7 +44,7 @@ function Accordion(props: IAccordionProps) {
 
       </div>
       <div className='basis-1/4 flex justify-end'>
-        {props.iconPath!==undefined && <img src={require(`../icons/${props.iconPath}`)} width="100px" alt="logo" />}
+        {props.iconPath!==undefined && <img src={require(`../assets/icons/${props.iconPath}`)} width="100px" alt="logo" />}
       </div>
     </div>
   </div>

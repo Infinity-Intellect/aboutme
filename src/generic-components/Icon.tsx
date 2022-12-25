@@ -8,7 +8,7 @@ interface IconProps {
 function Icon({ url, width, height }: IconProps) {
 
   if (url.length > 0) {
-    return <img className="m-2 object-contain" src={require(`../icons/${url}`)} style={{ width: width ? width : '60px', height: height ? height : '60px' }} alt="icon" />
+    return <img className="m-2 object-contain" src={require(`../assets/icons/${url}`)} style={{ width: width ? width : '60px', height: height ? height : '60px' }} alt="icon" />
   }
   else {
     return <span>-</span>

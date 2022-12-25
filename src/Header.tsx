@@ -43,7 +43,7 @@ function Header() {
     <div className="flex py-2 px-4 items-center justify-between card-shadow relative">
       <div id="headerLeftPane" className="flex flex-row items-center">
         <div id="avatar" className="mr-2">
-          <img src={require('./icons/squareDisplayPicture.jpg')} alt="atr" className="rounded-full" width={50} height={50} />
+          <img src={require('./assets/icons/squareDisplayPicture.jpg')} alt="atr" className="rounded-full" width={50} height={50} />
         </div>
         <div className="font-bold text-lg text-primary">SIDD</div>
       </div>
