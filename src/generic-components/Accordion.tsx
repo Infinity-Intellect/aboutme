@@ -23,10 +23,10 @@ function Accordion(props: IAccordionProps) {
   return <div className='card-shadow cursor-pointer my-4' onClick={() => { setExpanded(!expanded) }}>
     <div id="accordionHeader" className="flex flex-row items-center justify-between p-2">
       <div id="leftPane">
-        <div id="accordionTitle" className="font-bold text-xl">
+        <div id="accordionTitle" className="font-bold md:text-xl xs:text-base">
           {props.title}
         </div>
-        <div id="accordionDescription" className="text-base font-normal text-slate-500">
+        <div id="accordionDescription" className="md:text-base xs:text-sm font-normal text-slate-500">
           {props.description}
         </div>
       </div>
@@ -44,7 +44,7 @@ function Accordion(props: IAccordionProps) {
 
       </div>
       <div className='basis-1/4 flex justify-end'>
-        {props.iconPath!==undefined && <img src={require(`../assets/icons/${props.iconPath}`)} width="100px" alt="logo" />}
+        {props.iconPath!==undefined && <img src={require(`../assets/icons/${props.iconPath}`)} className="xs:w-[50px] md:w-[100px]" alt="logo" />}
       </div>
     </div>
   </div>
