@@ -16,7 +16,7 @@ function WorkAndEducation() {
       title: "Baroqe",
       description: "Web Developer (Intern)",
       subtitle: "Sep 2020 - Feb 2021",
-      body: "Contributed to the development of an mobile application using React Native, that enabled art instructors to take classes.",
+      body: "Contributed to the development of a mobile application using React Native, that enabled art instructors to take classes.",
     },
     {
       title: "Mepco Schlenk Engineering College",
