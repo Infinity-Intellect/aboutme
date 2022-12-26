@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { AiOutlineMenu } from 'react-icons/ai'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 
 interface ILinkProps {
   href: string;
@@ -51,7 +51,8 @@ function Header() {
         {LINKS.map((linkObject, idx) => <Link key={idx} title={linkObject.title} href={linkObject.href} navigate={navigate}/>)}
       </div>
       <div className="xs:block md:hidden cursor-pointer">
-        <AiOutlineMenu size={22} onClick={() => { setShowMenu(!showMenu) }} />
+        {!showMenu && <AiOutlineMenu size={22} onClick={() => { setShowMenu(true) }} />}
+        {showMenu && <AiOutlineClose size={22} onClick={() => { setShowMenu(false) }} />}
       </div>
       {showMenu && <div className="absolute top-20 right-4 p-4 w-60 card-shadow bg-white break-words">
         {LINKS.map((linkObject, idx) => <Link key={idx} title={linkObject.title} href={linkObject.href} navigate={navigate}/>)}
